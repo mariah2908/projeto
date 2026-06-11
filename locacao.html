@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Controle de Reservas de Eventos</h1>
+
+    <form action="salvarlocacao.php" method="post" onsubmit="return validar()">
+        <label for="id_locacao">ID da Locação</label>
+        <input type="text" id="id_locacao" name="id_locacao" required>
+
+        <label for="nome_cliente">Nome do Cliente</label>
+        <input type="text" id="nome_cliente" name="nome_cliente" required>
+
+        <label for="data_evento">Data do Evento</label>
+        <input type="text" id="data_evento" name="data_evento" placeholder="dd/mm/aaaa" required>
+
+        <label for="horario_inicio">Horário de Início</label>
+        <input type="text" id="horario_inicio" name="horario_inicio" placeholder="hh:mm" required>
+
+        <label for="horario_fim">Horário de Fim</label>
+        <input type="text" id="horario_fim" name="horario_fim" placeholder="hh:mm" required>
+
+        <label for="tipo_evento">Tipo de Evento</label>
+        <input type="text" id="tipo_evento" name="tipo_evento" required>
+
+        <label for="quantidade_convidados">Quantidade de Convidados</label>
+        <input type="text" id="quantidade_convidados" name="quantidade_convidados" required>
+
+        <label for="valor_locacao">Valor da Locação</label>
+        <input type="text" id="valor_locacao" name="valor_locacao" required>
+
+        <label for="status_locacao">Status da Locação</label>
+        <input type="text" id="status_locacao" name="status_locacao" required>
+
+        <label for="observacoes">Observações</label>
+        <textarea id="observacoes" name="observacoes" rows="4"></textarea>
+
+        <button type="submit">Salvar Reserva</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
